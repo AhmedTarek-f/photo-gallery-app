@@ -1,4 +1,7 @@
 abstract final class AppText {
+  static const String offlineMode = "Offline mode";
+  static const String offlineAndNoDataMessage =
+      "You are currently in offline mode and do not have any cached data available yet";
   // Validations
   static const String connectionValidation =
       "You are currently offline, please check your internet connection";

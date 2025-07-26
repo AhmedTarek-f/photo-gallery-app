@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:photo_gallery_app/core/constants/app_colors.dart';
 
 abstract class AppTheme {
@@ -10,6 +11,14 @@ abstract class AppTheme {
       secondary: AppColors.black,
       onPrimary: AppColors.blue,
       seedColor: Colors.white,
+      brightness: Brightness.light,
+    ),
+    textTheme: TextTheme(
+      bodyLarge: TextStyle(
+        fontSize: 16.sp,
+        fontWeight: FontWeight.w500,
+        color: AppColors.white,
+      ),
     ),
   );
 
@@ -21,6 +30,14 @@ abstract class AppTheme {
       secondary: AppColors.white,
       onPrimary: AppColors.white,
       seedColor: Colors.black,
+      brightness: Brightness.dark,
+    ),
+    textTheme: TextTheme(
+      bodyLarge: TextStyle(
+        fontSize: 16.sp,
+        fontWeight: FontWeight.w500,
+        color: AppColors.white,
+      ),
     ),
   );
 }

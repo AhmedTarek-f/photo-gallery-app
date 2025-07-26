@@ -22,10 +22,11 @@ class PhotoGalleryApp extends StatelessWidget {
         builder: (context, state) => MaterialApp(
           title: 'Photo Gallery',
           debugShowCheckedModeBanner: false,
-          darkTheme: AppTheme.lightTheme,
+          theme: AppTheme.lightTheme,
+          darkTheme: AppTheme.darkTheme,
           themeMode: controller.isDarkMode ? ThemeMode.dark : ThemeMode.light,
           onGenerateRoute: AppRouter.onGenerateRoute,
-          initialRoute: RouteNames.gallery,
+          initialRoute: RouteNames.photoGallery,
         ),
       ),
     );

@@ -1,3 +1,3 @@
 abstract class RouteNames {
-  static const String gallery = "/galleryView";
+  static const String photoGallery = "/photoGalleryView";
 }
