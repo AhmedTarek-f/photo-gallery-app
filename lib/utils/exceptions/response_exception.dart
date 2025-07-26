@@ -1,7 +1,8 @@
 import 'package:dio/dio.dart';
+import 'package:equatable/equatable.dart';
 import 'package:photo_gallery_app/core/constants/app_text.dart';
 
-class ResponseException {
+class ResponseException extends Equatable {
   const ResponseException({required this.status, required this.code});
 
   final num status;
@@ -23,4 +24,7 @@ class ResponseException {
       return empty();
     }
   }
+
+  @override
+  List<Object?> get props => [status, code];
 }

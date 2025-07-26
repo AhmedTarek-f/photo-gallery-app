@@ -23,6 +23,7 @@ class CustomToggleSwitch extends StatelessWidget {
   final ColorFilter? secondIconColor;
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
     return AnimatedToggleSwitch<int>.rolling(
       current: currentIndex,
       values: const [0, 1],
@@ -49,10 +50,10 @@ class CustomToggleSwitch extends StatelessWidget {
       spacing: 14.25.w,
       indicatorSize: Size.fromWidth(31.w),
       style: ToggleStyle(
-        borderColor: Theme.of(context).colorScheme.primary,
-        indicatorColor: Theme.of(context).colorScheme.primary,
+        borderColor: theme.colorScheme.onPrimary,
+        indicatorColor: theme.colorScheme.onPrimary,
         indicatorBorder: Border.all(
-          color: Theme.of(context).colorScheme.primary,
+          color: theme.colorScheme.onPrimary,
           width: 5.r,
         ),
         backgroundColor: Colors.transparent,
